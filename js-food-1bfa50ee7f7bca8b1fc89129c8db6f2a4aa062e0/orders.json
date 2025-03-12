@@ -1,0 +1,20 @@
+[
+    {
+        "id": 5,
+        "userID": 1,
+        "totalPrice": "5000",
+        "products": [
+            {
+                "name": "Маргарита",
+                "price": "1300",
+                "imgUrl": "./pizzas/1.svg"
+            },
+            {
+                "name": "Пепперони",
+                "price": "1300",
+                "imgUrl": "./pizzas/1.svg"
+            }
+        ] 
+    }
+    
+]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="signUp.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center h-screen">
+    <header class=" bg-orange-400 rounded-3xl h-[500px] w-[600px]">
+        <form>
+            <div class="flex justify-center items-start p-10">
+                <p class="text-5xl text-white">Регистрация</p>
+            </div>
+            <div class="flex justify-center items-center gap-5">
+                <input type="text" class="w-[200px] h-[50px] rounded-2xl bg-white text-center p-3 firstName font-bold"
+                    placeholder="Имя">
+                <input type="text" class=" w-[200px] h-[50px] rounded-2xl bg-white text-center p-3 lastName font-bold"
+                    placeholder="Фамилия">
+            </div>
+            <div class="flex flex-col items-center gap-4 p-5">
+                <input type="email" required class="w-[420px] h-[50px] rounded-2xl bg-white p-3 email font-bold"
+                    placeholder="Email">
+                <input type="password" required class="w-[420px] h-[50px] rounded-2xl bg-white p-3 password font-bold"
+                    placeholder="Пароль">
+            </div>
+            <div class="flex justify-center items-center">
+                <button type="submit"
+                    class="Continue w-[250px] h-[50px] rounded-3xl bg-white text-orange-400 font-bold">Зарегистрироваться</button>
+            </div>
+            <div class="flex justify-center items-center p-5 text-white font-bold">
+                <a href="signIn.html">Уже есть аккаунт? <span class="text-black">Войти</span></a>
+            </div>
+        </form>
+
+    </header>
+</body>
+
+</html>

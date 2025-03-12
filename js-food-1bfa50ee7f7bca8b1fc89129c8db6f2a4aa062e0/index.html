@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS PIZZA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div
+        class="cart w-[100%] h-[100vh] fixed top-0 left-0 flex items-start justify-center bg-black bg-opacity-50 overflow-scroll p-24 hidden">
+        <div class="w-[90vw] bg-white relative z-10 p-24  rounded-3xl">
+            <img class="cursor-pointer close absolute z-10 right-5 top-5" src="./img/Cross.svg" alt="">
+            <div class="flex items-center justify-between mb-10">
+                <div class="flex items-center gap-2">
+                    <img src="./img/CartPage.svg" alt="">
+                    <span class="font-bold text-xl">Корзина</span>
+                </div>
+                <div class="cursor-pointer flex items-center gap-2 text-slate-400 font-bold remove-cart">
+                    <img src="./img/MinusCart.svg" alt="">
+                    <span class="hover:text-black hover:transition-all">Очистить корзину</span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start cart-pizza-list">
+
+            </div>
+
+            <div class="flex items-center justify-between mt-10 text-2xl">
+                <p>Всего пицц: <span class="font-bold total-pizza-count">3шт.</span></p>
+                <div class="cursor-pointer bg-orange-500 p-3 flex items-center gap-3 text-white rounded-full">
+                    <span>Оформить заказ</span>
+                </div>
+                <p>Сумма заказа: <span class="font-bold text-orange-500 total-pizza-price">900тг.</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-orange-400 p-10">
+        <div class="bg-white p-10 rounded-3xl">
+            <header class="flex justify-between">
+                <div class="flex items-center gap-4">
+                    <img src="img/logo.svg" alt="">
+                    <div>
+                        <h1 class="text-xl font-bold">JS PIZZA</h1>
+                        <p class="text-slate-400">Самая вкусная пицца во вселенной</p>
+                    </div>
+                </div>
+                <div>
+                    <input class="search px-5 py-2 rounded-full outline-none border-slate-300 border w-[300px]"
+                        type="text" placeholder="Искать пиццу">
+                </div>
+                <div class="flex items-center gap-3 right-block">
+
+
+                    <div
+                        class="cursor-pointer exit-button bg-orange-500 p-3 flex items-center gap-3 text-white rounded-full">
+                        <span>Выход</span>
+                    </div>
+                    <div
+                        class="cursor-pointer sign-button bg-orange-500 p-3 flex items-center gap-3 text-white rounded-full">
+                        <span>Войти</span>
+                    </div>
+
+                    <div
+                        class="cursor-pointer cart-button bg-orange-500 p-3 flex items-center gap-3 text-white rounded-full">
+                        <span class="total-pizza-price">520тг</span>
+                        <div class="bg-orange-300 w-[1px] h-6"></div>
+                        <div class="flex items-center gap-2">
+                            <img src=" img/cart.svg" alt="">
+                            <span class="total-pizza-count">3</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+            <section class="mt-10 flex justify-between items-start">
+                <div class="flex gap-3 items-center font-bold categories">
+                    <!-- <button class="bg-slate-100 text-black px-5 py-3 rounded-full">Мясные</button> -->
+                </div>
+                <div class="conteiner">
+                    <div class="tog flex items-center gap-2 cursor-pointer">
+                        <img class="img" src="./img/arrow-up.svg" alt="">
+                        <p>Сортировка по: </p>
+                        <a class="text-orange-400 border-b-2 border-dotted border-orange-500" href="#">популярности</a>
+                    </div>
+                    <div class="list-items">
+                        <span class="up">По возрастанию цены</span>
+                        <span class="down">По убыванию цены</span>
+                    </div>
+                </div>
+            </section>
+            <h2 class="text-3xl font-bold my-10 mt-[-70px]">Все пиццы</h2>
+            <section id="pizzaList" class="flex items-center gap-10 justify-start flex-wrap">
+
+            </section>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
